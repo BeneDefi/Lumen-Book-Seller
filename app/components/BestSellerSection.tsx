@@ -279,17 +279,6 @@ function TopRatedBooksSection() {
 export default function Page() {
   return (
     <main className="min-h-screen bg-white">
-      <header className="border-b border-gray-100 bg-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-10">
-          <h1 className="text-2xl font-extrabold tracking-tight text-[#a642d8]">
-            Lumen Books
-          </h1>
-
-          <button className="rounded-full bg-[#a642d8] px-5 py-2 text-sm font-semibold text-white">
-            Explore
-          </button>
-        </div>
-      </header>
 
       <TopRatedBooksSection />
       <BestSellerSection />
