@@ -127,9 +127,11 @@ function BestSellerSection() {
                 className="flex flex-col gap-5 sm:flex-row"
               >
                 <div className="relative h-[190px] w-[115px] overflow-hidden rounded-2xl flex-shrink-0">
-<img
+<Image
   src={book.image}
   alt={book.title}
+  width={115}
+  height={190}
   className="absolute inset-0 h-full w-full object-cover"
 />
 
@@ -224,9 +226,11 @@ function TopRatedBooksSection() {
             {topRatedBooks.map((book) => (
               <div key={book.title}>
                 <div className="relative h-[210px] overflow-hidden rounded-2xl">
-<img
+<Image
   src={book.image}
   alt={book.title}
+  width={300}
+  height={210}
   className="absolute inset-0 h-full w-full object-cover"
 />
                 </div>

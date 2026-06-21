@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import {
   ArrowLeft,
   ArrowRight,
@@ -114,9 +116,11 @@ export default function FlashSaleSection() {
                 >
                   <div className="flex gap-4">
                     <div className="h-[150px] w-[100px] flex-shrink-0 overflow-hidden rounded-2xl">
-                      <img
+                      <Image
                         src={book.image}
                         alt={book.title}
+                        width={100}
+                        height={150}
                         className="h-full w-full object-cover"
                       />
                     </div>

@@ -66,9 +66,11 @@ export default function FeaturedBooks() {
             >
               <div className="flex flex-col gap-8 p-6 sm:p-8 md:flex-row md:items-center">
                 <div className="relative mx-auto h-[250px] w-[155px] flex-shrink-0 overflow-hidden rounded-2xl md:mx-0">
-                      <img
+                      <Image
                         src={book.image}
                         alt={book.title}
+                        width={155}
+                        height={250}
                         className="h-full w-full object-cover"
                       />
 

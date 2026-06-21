@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { ArrowLeft, ArrowRight, Star } from "lucide-react";
 
 export default function Page() {
@@ -74,9 +76,11 @@ export default function Page() {
 
           <div className="-mt-12 flex flex-col items-center">
             <div className="w-16 h-16 rounded-full border-[5px] border-white overflow-hidden shadow-lg">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80"
                 alt="Ijeoma Oluo"
+                width={64}
+                height={64}
                 className="w-full h-full object-cover"
               />
             </div>

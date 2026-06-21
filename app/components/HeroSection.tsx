@@ -1,4 +1,6 @@
 import NavBar from "@/app/components/Navbar"
+import Image from "next/image";
+import Link from "next/link";
 
 import {
   Clock3,
@@ -75,17 +77,19 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              <button className="mt-10 flex h-14 items-center gap-8 rounded-md bg-[#F41D83] px-8 font-semibold text-white transition hover:bg-[#ec147b]">
+              <Link href="/books" className="mt-10 flex h-14 w-fit items-center gap-8 rounded-md bg-[#F41D83] px-8 font-semibold text-white transition hover:bg-[#ec147b]">
                 Go to Collections
                 <ArrowRight size={18} />
-              </button>
+              </Link>
             </div>
 
             <div className="flex justify-center gap-8 xl:justify-end">
               <div className="relative h-[395px] w-[220px] overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(204,108,255,0.25)]">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200"
                   alt=""
+                  width={220}
+                  height={395}
                   className="h-full w-full object-cover"
                 />
 
@@ -109,9 +113,11 @@ export default function HeroSection() {
               </div>
 
               <div className="relative h-[395px] w-[220px] overflow-hidden rounded-2xl">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1516972810927-80185027ca84?q=80&w=1200"
                   alt=""
+                  width={220}
+                  height={395}
                   className="h-full w-full object-cover"
                 />
 
@@ -133,9 +139,11 @@ export default function HeroSection() {
               </div>
 
               <div className="hidden h-[395px] w-[120px] overflow-hidden rounded-2xl opacity-40 2xl:block">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1200"
                   alt=""
+                  width={120}
+                  height={395}
                   className="h-full w-full object-cover"
                 />
               </div>

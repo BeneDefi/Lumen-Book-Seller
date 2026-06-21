@@ -54,9 +54,11 @@ export default function LumenBooksLatestNews() {
           {articles.map((article, index) => (
             <article key={index} className="group">
               <div className="relative h-[190px] overflow-hidden rounded-md sm:h-[180px] lg:h-[150px]">
-                <img
+                <Image
                   src={article.image}
                   alt={article.title}
+                  width={300}
+                  height={190}
                   className="object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>

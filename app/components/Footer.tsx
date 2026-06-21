@@ -1,6 +1,7 @@
 "use client";
 
-import { BookOpen } from "lucide-react";
+import Link from "next/link";
+import { BookOpen, Heart } from "lucide-react";
 
 import {
   FaFacebookF,
@@ -121,21 +122,11 @@ export default function LumenBooksFooter() {
               </h4>
 
               <ul className="mt-8 space-y-5 text-[15px] text-[#8d8695]">
-                <li>
-                  <a href="#">About us</a>
-                </li>
-                <li>
-                  <a href="#">Contact us</a>
-                </li>
-                <li>
-                  <a href="#">Products</a>
-                </li>
-                <li>
-                  <a href="#">Login</a>
-                </li>
-                <li>
-                  <a href="#">Sign Up</a>
-                </li>
+                <li><Link href="/books/about" className="hover:text-[#8f2dc4] transition">About us</Link></li>
+                <li><Link href="/books/contact" className="hover:text-[#8f2dc4] transition">Contact us</Link></li>
+                <li><Link href="/books" className="hover:text-[#8f2dc4] transition">Catalog</Link></li>
+                <li><Link href="/login" className="hover:text-[#8f2dc4] transition">Login</Link></li>
+                <li><Link href="/dashboard" className="hover:text-[#8f2dc4] transition">Dashboard</Link></li>
               </ul>
             </div>
 
@@ -201,9 +192,7 @@ export default function LumenBooksFooter() {
               <span>© 2020 All Rights Reserved</span>
             </div>
 
-            <div>
-              Made with ❤️ by Peterdraw
-            </div>
+              Made with <Heart size={14} className="inline text-red-500 fill-current mx-1" /> by Peterdraw
           </div>
         </div>
       </section>

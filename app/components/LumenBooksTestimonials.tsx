@@ -40,9 +40,11 @@ export default function LumenBooksTestimonials() {
                     index !== 0 ? "-ml-3" : ""
                   }`}
                 >
-                  <img
+                  <Image
                     src={avatar}
                     alt="reader"
+                    width={48}
+                    height={48}
                     className="object-cover"
                   />
                 </div>
@@ -86,9 +88,11 @@ export default function LumenBooksTestimonials() {
               <p className="mt-1 text-[13px] text-[#9a9a9a]">Book Lovers</p>
 
               <div className="absolute left-1/2 top-full h-[72px] w-[72px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border-[4px] border-white shadow-lg">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
                   alt="Steve Henry"
+                  width={72}
+                  height={72}
                   className="object-cover"
                 />
               </div>
